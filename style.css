@@ -3,7 +3,6 @@
   padding: 0px;
 }
 body {
-  background-color: rgb(60, 60, 63);
   margin: 20px;
   border: 5px solid blueviolet;
 }
@@ -81,4 +80,14 @@ nav .list {
   margin-top: 150px;
   text-align: center;
   text-shadow: 5px 5px blueviolet;
+}
+@media (min-width: 720px) {
+  body {
+    background-color: rgb(223, 8, 169);
+  }
+}
+@media (max-width: 800px) {
+  body {
+    background-color: rgb(255, 143, 231);
+  }
 }
