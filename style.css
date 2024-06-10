@@ -6,28 +6,7 @@ body {
   margin: 20px;
   border: 5px solid blueviolet;
 }
-.bg {
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  width: 95%;
-  height: 200px;
-  border-bottom: 5px solid blueviolet;
-}
-.profile {
-  position: absolute;
-  margin-top: 100px;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 2px solid blueviolet;
-}
-.name {
-  background-color: none;
-  text-decoration: underline;
-}
+
 .title {
   position: relative;
   top: 100px;
@@ -56,13 +35,7 @@ nav .list {
   margin-top: 50px;
   margin-bottom: 0px;
 }
-.images {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  overflow-wrap: normal;
-  gap: 20px;
-  margin: 5px;
-}
+
 .images img:hover {
   border: 5px solid blueviolet;
   border-radius: 50px 0px 50px 0px;
@@ -82,12 +55,106 @@ nav .list {
   text-shadow: 5px 5px blueviolet;
 }
 @media (min-width: 720px) {
+  .bg {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    width: 95%;
+    height: 200px;
+    border-bottom: 5px solid blueviolet;
+  }
+  .profile {
+    position: absolute;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+  }
+  .name {
+    background-color: none;
+    text-decoration: underline;
+  }
   body {
     background-color: rgb(223, 8, 169);
   }
+  .images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-wrap: normal;
+    gap: 20px;
+    margin: 5px;
+  }
 }
-@media (max-width: 800px) {
+@media screen and (min-width: 720px) and (max-width: 1020px) {
+  .bg {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    width: 95%;
+    height: 200px;
+    border-bottom: 5px solid blueviolet;
+  }
+  .profile {
+    position: absolute;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+  }
+  .name {
+    background-color: none;
+    text-decoration: underline;
+  }
   body {
-    background-color: rgb(255, 143, 231);
+    background-color: rgb(163, 71, 163);
+  }
+  .images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-wrap: normal;
+    gap: 20px;
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .bg {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    width: 95%;
+    height: 200px;
+    border-bottom: 5px solid blueviolet;
+  }
+  .profile {
+    position: absolute;
+    margin-top: 150px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+  }
+  .name {
+    background-color: none;
+    text-decoration: underline;
+    padding-top: 100px;
+    text-align: center;
+  }
+  body {
+    background-color: rgb(240, 130, 240);
+  }
+  .images {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    overflow-wrap: normal;
+    gap: 20px;
+    margin: 5px;
   }
 }
