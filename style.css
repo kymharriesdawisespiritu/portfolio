@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(60, 60, 63);
+}
+.bg {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  border-bottom: 5px solid blueviolet;
+}
+.profile {
+  position: absolute;
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid blueviolet;
+}
+.name {
+  background-color: none;
+  text-decoration: underline;
+}
+.title {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: white;
+}
