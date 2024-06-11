@@ -1,162 +1,167 @@
-* {
-  margin: 0px;
-  padding: 0px;
+header {
+  background-image: url(./images/bgimg.jpg);
 }
 body {
-  margin: 20px;
-  border: 5px solid blueviolet;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(202, 142, 255);
 }
 
-.title {
+.intro {
   position: relative;
-  top: 100px;
+  top: -300px;
   text-align: center;
-  color: white;
+  color: aliceblue;
+  text-shadow: 1px 1px black;
+}
+.container {
+  padding: 0%;
+}
+.images {
+  height: 90px;
+  width: 253px;
+}
+.profile img {
+  border-radius: 50%;
+  border: 1px solid rgb(192, 155, 226);
+  margin: 100px 50px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.skills figure:hover {
+  box-shadow: 5px 10px rgb(31, 31, 31);
+}
+
+.skills figure {
+  text-align: center;
 }
 footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 50px;
-  margin-right: 20px;
-  background-color: blueviolet;
+  background-color: rgb(236, 156, 243);
 }
-nav {
-  text-decoration-color: white;
-}
-nav .list {
+.more {
+  list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-direction: row;
-  margin-top: 10px;
+  justify-content: space-evenly;
 }
-.photo {
-  height: 200px;
-  margin-top: 50px;
-  margin-bottom: 0px;
+.backgrounds {
+  border-top: 2px double blueviolet;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.education {
+  width: 50%;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  /*mobile device*/
+  .intro {
+    position: relative;
+    top: -100px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+  }
+  .skills figure {
+    width: 230;
+  }
+  .images {
+    height: 90px;
+    width: 253px;
+  }
+  header {
+    width: 100%;
+    height: 500px;
+  }
+  .profile img {
+    border-radius: 50%;
+    border: 1px solid rgb(192, 155, 226);
+    margin: 100px 50px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+  .skills {
+    display: grid;
+    grid-template-rows: repeat(1, 4fr);
+    overflow-wrap: normal;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /*ipad or tablets*/
+
+  .skills figure {
+    max-width: 230;
+  }
+  .images {
+    height: 90px;
+    width: 253px;
+  }
+  .intro {
+    position: relative;
+    top: -100px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+  }
+
+  header {
+    width: 100%;
+    height: 450px;
+  }
+  .profile img {
+    border-radius: 50%;
+    border: 1px solid rgb(192, 155, 226);
+    margin: 100px 50px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .skills {
+    display: grid;
+    grid-template-rows: repeat(1, 4fr);
+    overflow-wrap: wrap;
+  }
 }
 
-.images img:hover {
-  border: 5px solid blueviolet;
-  border-radius: 50px 0px 50px 0px;
-}
-.logo-name {
-  display: block;
-  text-align: center;
-  text-decoration: underline;
-}
-.discript {
-  box-shadow: 5px 5px;
-  height: 300px;
-}
-.skill-set {
-  margin-top: 150px;
-  text-align: center;
-  text-shadow: 5px 5px blueviolet;
-}
-@media (min-width: 720px) {
-  .bg {
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    width: 95%;
-    height: 200px;
-    border-bottom: 5px solid blueviolet;
-  }
-  .profile {
-    position: absolute;
-    margin-top: 100px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid blueviolet;
-  }
-  .name {
-    background-color: none;
-    text-decoration: underline;
-  }
-  body {
-    background-color: rgb(223, 8, 169);
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /*small screen,laptops*/
+  .skills figure {
+    width: 230;
   }
   .images {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    overflow-wrap: normal;
-    gap: 20px;
-    margin: 5px;
+    height: 90px;
+    width: 253px;
   }
-}
-@media screen and (min-width: 720px) and (max-width: 1020px) {
-  .bg {
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    width: 95%;
-    height: 200px;
-    border-bottom: 5px solid blueviolet;
-  }
-  .profile {
-    position: absolute;
-    margin-top: 100px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid blueviolet;
-  }
-  .name {
-    background-color: none;
-    text-decoration: underline;
-  }
-  body {
-    background-color: rgb(163, 71, 163);
-  }
-  .images {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    overflow-wrap: normal;
-    gap: 20px;
-    margin: 5px;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 720px) {
-  .bg {
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    width: 90%;
-    margin-right: 20px;
-    height: 200px;
-    border-bottom: 5px solid blueviolet;
-  }
-  .profile {
-    position: absolute;
-    margin-top: 150px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid blueviolet;
-  }
-  .name {
-    background-color: none;
-    text-decoration: underline;
-    margin-top: 120px;
+  .intro {
+    position: relative;
+    top: -300px;
     text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
   }
-  body {
-    background-color: rgb(240, 130, 240);
+  header {
+    width: 100%;
+    height: 400px;
   }
-  .images {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    overflow-wrap: normal;
-    gap: 20px;
-    margin: 5px;
+  .profile img {
+    border-radius: 50%;
+    border: 1px solid rgb(192, 155, 226);
+    margin: 100px 50px;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
