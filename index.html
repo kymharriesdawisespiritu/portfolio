@@ -1,147 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kym Espiritu - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
     <div class="container">
-      <header>
-        <div class="profile">
-          <div>
-            <img src="./images/profile pic.jpg" alt="profile" />
-          </div>
-        </div>
-        <div class="intro">
-          <h1 class="name">KYM ESPIRTU</h1>
-          <h2 class="title">
-            Designed Protfollio for another exploration, <br />
-            and to show how far i got, compare <br />when i am start learning
-          </h2>
-        </div>
-      </header>
-      <main>
-        <div>
-          <div class="skills">
-            <figure>
-              <img
-                class="images"
-                src="./images/html-5-svgrepo-com.svg"
-                alt="html"
-              />
-              <div class="rtcl">
-                <figcaption><h2>Html</h2></figcaption>
-                <article>
-                  <p>
-                    I learned html,just because i want to try to Design website
-                    just for fun and i started from basic knowledge of
-                    structure, and rate my knowledge of 10% out of 100% i know
-                    that a lot of things i need to learn this is not actualy
-                    really hard to do and i learned from
-                    <strong> full stack web dev </strong>
-                    application
-                  </p>
-                </article>
-              </div>
-            </figure>
-            <figure>
-              <img
-                class="images"
-                src="./images/css-svgrepo-com.svg"
-                alt="css"
-              />
-              <div class="rtcl">
-                <figcaption><h2>CSS</h2></figcaption>
-                <article>
-                  <p>
-                    My knowledge in css is very basic just like basic knowledge,
-                    difficulty of css is, mild that kids can and i rate my
-                    knowledge is ABOUT 8% .but i really confident to learn every
-                    properties of css
-                    <br />
-                  </p>
-                </article>
-              </div>
-            </figure>
-            <figure>
-              <img
-                class="images"
-                src="./images/js-official-svgrepo-com.svg"
-                alt="java-script"
-              />
-              <div class="rtcl">
-                <figcaption><h2>JS</h2></figcaption>
-                <article>
-                  <p>
-                    I learn js because i want to be a backend wed development
-                    ,and i learn it from <strong>grass hopper </strong>
-                    app i learn more of it,and i rate my knowledge as 15%
-                  </p>
-                </article>
-              </div>
-            </figure>
-            <figure>
-              <img
-                class="images"
-                src="./images/python-svgrepo-com.svg"
-                alt="python"
-              />
-              <div class="rtcl">
-                <figcaption><h2>PYTHON</h2></figcaption>
-                <article>
-                  <p>
-                    I love python cause when i was a young age of 15 i am very
-                    curiuse about how games tv etc. work and i research i lot of
-                    things about building games then i found python the
-                    begginers friendly and start from basic and now my knowledge
-                    from in python is about 60% and i learned from
-                    <strong>AI and ML learning</strong>
-                  </p>
-                </article>
-              </div>
-            </figure>
-          </div>
-          <div class="backgrounds">
-            <div class="education">
-              <h2 class="degree">My Background</h2>
-              <p>
-                i only reach grade 11 senior highschool but i know i lot in math
-                than the other student i love to solve i lot of things just take
-                time course i desire is <strong>Computer Science</strong> but i
-                failed to be, because i am working student and the young age of
-                16 achieve to work as a <strong>security guard</strong>
-                because, i am really responseble for every duties, and i cant
-                sleep well cause my night duty and daily schooling
-              </p>
+        <!-- HEADER -->
+        <header class="hero">
+            <div class="profile">
+                <img src="./images/profile pic.jpg" alt="Kym Espiritu" class="profile-img">
             </div>
-            <div class="ability">
-              <h3>i am able to :</h3>
-              <ul>
-                <li>To solve hard things to do</li>
-                <li>To imagine i lot of thing</li>
-                <li>Make good result</li>
-                <li>Keep going even at the hard times</li>
-                <li>Abilty to perform the act of canning</li>
-              </ul>
+            <div class="intro">
+                <h1 class="name">Kym Espiritu</h1>
+                <h2 class="title">
+                    Self-Taught <span class="highlight">Web Developer</span><br>
+                    Building modern websites with HTML, CSS, JavaScript & Python
+                </h2>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Hire Me</a>
+                </div>
             </div>
-          </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <section id="about" class="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>
+                        Passionate self-taught developer with real-world experience from construction and security roles. 
+                        Love solving complex problems through code. Started coding at 15, building games and apps with Python. 
+                        Currently mastering modern web technologies. Strong work ethic, creative problem-solver, and quick learner.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION - COMPLETE WEB DEV STACK -->
+<section id="skills" class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+        <!-- HTML -->
+        <div class="skill-card">
+            <img src="./images/html-5-svgrepo-com.svg" alt="HTML5" class="skill-icon">
+            <h3>HTML5</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+            </div>
+            <p>Semantic markup, forms, accessibility</p>
         </div>
-      </main>
+
+        <!-- CSS -->
+        <div class="skill-card">
+            <img src="./images/css-svgrepo-com.svg" alt="CSS3" class="skill-icon">
+            <h3>CSS3</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+            </div>
+            <p>Flexbox, Grid, Animations, Responsive</p>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+            <img src="./images/js-official-svgrepo-com.svg" alt="JavaScript" class="skill-icon">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+            </div>
+            <p>ES6+, DOM, Async/Await, APIs</p>
+        </div>
+
+        <!-- PHP -->
+        <div class="skill-card">
+            <img src="./images/php2-svgrepo-com.svg" alt="PHP" class="skill-icon">
+            <h3>PHP 8</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+            </div>
+            <p>Backend, CRUD, Sessions, Security</p>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="skill-card">
+            <img src="./images/bootstrap-svgrepo-com.svg" alt="Bootstrap" class="skill-icon">
+            <h3>Bootstrap 5</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+            </div>
+            <p>Responsive components, Grid system</p>
+        </div>
+
+        <!-- Tailwind -->
+        <div class="skill-card">
+            <img src="./images/tailwind-svgrepo-com.svg" alt="Tailwind" class="skill-icon">
+            <h3>Tailwind CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="65%"></div>
+            </div>
+            <p>Utility-first CSS framework</p>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+            <img src="./images/react-svgrepo-com.svg" alt="React" class="skill-icon">
+            <h3>React.js</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="55%"></div>
+            </div>
+            <p>Components, Hooks, State Management</p>
+        </div>
+
+        <!-- Laravel -->
+        <div class="skill-card">
+            <img src="./images/laravel-svgrepo-com.svg" alt="Laravel" class="skill-icon">
+            <h3>Laravel</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="50%"></div>
+            </div>
+            <p>MVC Framework, Eloquent ORM, Blade</p>
+        </div>
     </div>
-  </body>
-  <footer>
-    <nav>
-      <ul class="more">
-        <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
-        <li>
-          <a href="http://127.0.0.1:5500/index.html#offcanvasNavbar">ABOUT</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.1:5500/index.html#foot">SERVICE</a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
+</section>
+            <!-- PROJECTS -->
+            <section id="projects" class="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./images/project1.jpg" alt="Vendor Dashboard" class="project-img">
+                        <div class="project-info">
+                            <h3>Vendor Dashboard</h3>
+                            <p>Full-stack PHP/MySQL app for managing vendors and inventory</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./images/project2.jpg" alt="Portfolio" class="project-img">
+                        <div class="project-info">
+                            <h3>Personal Portfolio</h3>
+                            <p>Modern responsive portfolio showcasing web development skills</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BACKGROUND -->
+            <section id="background" class="background-section">
+                <h2 class="section-title">My Journey</h2>
+                <div class="background-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Security Guard (Age 16)</h3>
+                            <p>Balanced night shifts with schooling - developed discipline and responsibility</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Construction Worker</h3>
+                            <p>Team collaboration and problem-solving in high-pressure environments</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Self-Taught Developer</h3>
+                            <p>6+ years learning HTML, CSS, JS, Python through online resources</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="contact-section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0991-870-3633</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>codingjourney08@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>https://github.com/kymharriesdawisespiritu</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <nav class="nav-footer">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Kym Espiritu. Built with ❤️ and code.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
