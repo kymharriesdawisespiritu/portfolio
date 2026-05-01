@@ -30,3 +30,8 @@ window.addEventListener('scroll', () => {
         nav.style.backdropFilter = 'none';
     }
 });
+window.addEventListener("load", () => {
+  document.querySelectorAll(".progress").forEach(bar => {
+    bar.style.width = bar.dataset.width;
+  });
+});
