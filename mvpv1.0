@@ -1,0 +1,57 @@
+Portfolio MVP v1.0
+
+[/] Setup Project
+  [/] Gumawa ng index.html
+  [/] Gumawa ng style.css
+  [/] Gumawa ng assets folder
+
+[/] Header
+  [/] Logo o Pangalan
+  [/] Navigation (Home, About, Projects, Contact)
+  [/] Responsive Hamburger Menu
+
+[/] Hero Section
+  [/] Pangalan
+  [/] Short Introduction
+  [/] "Hire Me" Button
+  [/] "Projects" Button
+
+[/] About Me
+  [/] Maikling Description
+  [/] Skills List
+  [/] Profile Picture
+
+[/] Projects
+  [/] Project Card #1
+    [/] Image
+    [/] Title
+    [/] Description
+    [/] Live Demo Button
+    [/] GitHub Button
+  [/] Project Card #2
+    [/] Image
+    [/] Title
+    [/] Description
+    [/] Live Demo Button
+    [/] GitHub Button
+  [/] Project Card #3
+    [/] Image
+    [/] Title
+    [/] Description
+    [/] Live Demo Button
+    [/] GitHub Button
+
+[/] Contact
+  [/] Email
+  [] Facebook Link
+  [] GitHub Link
+  [.] LinkedIn Link
+
+[/] Footer
+  [/] Copyright
+  [/] Back to Top Button
+
+[/] Responsive
+  [/] Mobile
+  [/] Tablet
+  [/] Desktop
