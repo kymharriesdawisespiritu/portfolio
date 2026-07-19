@@ -43,8 +43,8 @@ Portfolio MVP v1.0
 
 [/] Contact
   [/] Email
-  [] Facebook Link
-  [] GitHub Link
+  [.] Facebook Link
+  [.] GitHub Link
   [.] LinkedIn Link
 
 [/] Footer
@@ -55,3 +55,57 @@ Portfolio MVP v1.0
   [/] Mobile
   [/] Tablet
   [/] Desktop
+
+Portfolio v2.0
+
+[/] Better Navigation
+  [/] Active Navigation
+  [/] Smooth Scrolling
+  [/] Scroll Spy
+
+[] Better Projects
+  [] Real Project Screenshots
+  [] Better Descriptions
+  [] Tech Stack Badges
+  [] GitHub Links
+  [] Live Demo Links
+
+[] UI Improvements
+  [] Dark Mode
+  [] Theme Switcher
+  [] Better Color Palette
+  [] Better Typography
+  [] Glassmorphism Cards
+
+[] Animations
+  [] Fade In
+  [] Scroll Animation
+  [] Hover Effects
+  [] Button Animation
+
+[] Contact
+  [] Facebook Link
+  [] GitHub Link
+  [] LinkedIn Link
+  [] Working Contact Form
+
+[] Skills
+  [] Animated Progress Bars
+  [] Skill Icons
+  [] Certificates
+
+[] SEO
+  [] Meta Description
+  [] Open Graph Tags
+  [] Favicon
+  [] Better Page Title
+
+[] Performance
+  [] Optimize Images
+  [] Lazy Loading
+  [] Compress Assets
+
+[] Accessibility
+  [] Better Alt Text
+  [] Keyboard Navigation
+  [] Better Contrast
