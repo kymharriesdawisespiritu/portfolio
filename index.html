@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="style.css" />
     <title>portfolio</title>
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNavbarMenu"
+    data-bs-offset="70"
+    class="position-relative"
+  >
     <!-- header section -->
     <section class="header-section sticky-top">
       <header>
@@ -38,9 +43,7 @@
             <div class="collapse navbar-collapse" id="mainNavbarMenu">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About</a>
@@ -58,7 +61,7 @@
       </header>
     </section>
     <!--hero section  -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="container">
         <div
           class="row d-flex align-items-center justify-content-center flex-lg-row-reverse g-5 py-5"
