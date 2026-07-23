@@ -89,15 +89,21 @@
               Laravel through hands-on projects.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                HIRE ME
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
+              <a href="#contact">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  HIRE ME
+                </button></a
+              ><a href="#project">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  VIEW PROJECTS
+                </button></a
               >
-                VIEW PROJECTS
-              </button>
             </div>
           </div>
         </div>
@@ -385,7 +391,7 @@
           class="row d-flex align-items-center justify-content-center flex-lg-row-reverse"
         >
           <!-- Image Column -->
-          <div class="col-10 col-sm-8 col-lg-6 align-items-center">
+          <div class="col-10 col-sm-8 col-lg-6">
             <div
               id="carousel"
               class="carousel slide"
@@ -414,14 +420,21 @@
                   aria-label="Slide 3"
                 ></button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
+
+              <!-- FIXED HEIGHT & SCROLL CONTAINER -->
+              <div
+                class="carousel-inner overflow-auto rounded"
+                style="height: 500px"
+              >
+                <div class="carousel-item active h-100">
                   <img
-                    src="./assets/portfolio-svgrepo-com.svg"
-                    class="d-block w-100"
-                    alt="..."
+                    src="./images/kymharriesdawisespiritu.github.io_ToDoList_.png"
+                    class="d-block w-100 h-100 object-fit-cover"
+                    alt="NovaStore Project"
                   />
-                  <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="carousel-caption d-none bg-dark bg-opacity-50 rounded"
+                  >
                     <h5>First slide label</h5>
                     <p>
                       Some representative placeholder content for the first
@@ -429,13 +442,16 @@
                     </p>
                   </div>
                 </div>
-                <div class="carousel-item">
+
+                <div class="carousel-item h-100">
                   <img
-                    src="./assets/portfolio-svgrepo-com.svg"
-                    class="d-block w-100"
-                    alt="..."
+                    src="./images/_C__Users_codin_Documents_projects_photogallery_index.html.png"
+                    class="d-block w-100 h-100 object-fit-cover"
+                    alt="Photo Gallery Project"
                   />
-                  <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="carousel-caption d-none bg-dark bg-opacity-50 rounded"
+                  >
                     <h5>Second slide label</h5>
                     <p>
                       Some representative placeholder content for the second
@@ -443,13 +459,16 @@
                     </p>
                   </div>
                 </div>
-                <div class="carousel-item">
+
+                <div class="carousel-item h-100">
                   <img
                     src="./assets/portfolio-svgrepo-com.svg"
-                    class="d-block w-100"
-                    alt="..."
+                    class="d-block w-100 h-100 object-fit-cover"
+                    alt="Portfolio Asset"
                   />
-                  <div class="carousel-caption d-none d-md-block">
+                  <div
+                    class="carousel-caption d-none bg-dark bg-opacity-50 rounded"
+                  >
                     <h5>Third slide label</h5>
                     <p>
                       Some representative placeholder content for the third
@@ -458,6 +477,7 @@
                   </div>
                 </div>
               </div>
+
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -484,38 +504,50 @@
               </button>
             </div>
           </div>
+
+          <!-- Content Column -->
           <!-- Content Column -->
           <div class="col-lg-6">
-            <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              my projects
+            <h3
+              id="project-title"
+              class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+            >
+              ToDoList
             </h3>
-            <p class="lead">
-              Here are some of the projects I've built to practice, improve, and
-              showcase my web development skills. Each project reflects my
-              dedication to continuous learning, problem-solving, and creating
-              responsive, user-friendly web applications using modern
-              technologies.
+            <p id="project-desc" class="lead">
+              A simple ToDo List application built with **HTML, CSS, and
+              JavaScript**. This project allows users to add tasks, mark them as
+              completed, and delete completed tasks. It was created to practice
+              DOM manipulation, event handling, and basic JavaScript
+              fundamentals without using any frameworks.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              <a
+                id="project-view"
+                href="https://kymharriesdawisespiritu.github.io/ToDoList/"
+                target="_blank"
+                class="btn btn-primary btn-lg px-4 me-md-2"
+              >
                 VIEW WEBSITE
-              </button>
-              <button
-                type="button"
+              </a>
+              <a
+                id="project-repo"
+                href="https://github.com/kymharriesdawisespiritu/ToDoList.git"
+                target="_blank"
                 class="btn btn-outline-secondary btn-lg px-4"
               >
                 REPOSITORY
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Contact Section -->
     <section
-      class="contact-section"
       id="contact"
-      class="py-5 bg-light d-flex justify-content-center align-items-center"
+      class="contact-section py-5 bg-light d-flex justify-content-center align-items-center"
     >
       <div class="container shadow-lg p-4">
         <div class="text-center mb-5">
@@ -523,21 +555,25 @@
         </div>
         <div class="row g-4 align-items-stretch justify-content-center">
           <!-- Info Column -->
-          <div
-            class="col-lg-5 d-flex justify-content-center align-items-center"
-          >
-            <div class="card h-100 border-0 shadow-lg p-4">
+          <div class="col-lg-5 d-flex">
+            <div
+              id="carousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="2500"
+              data-bs-touch="true"
+            >
               <h4 class="fw-bold mb-4">Contact Info</h4>
+
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:codingjourney08@email@example.com"
                 class="list-group-item list-group-item-action border-0 d-flex align-items-center py-3 px-0"
               >
                 <img
                   src="./assets/email-18-svgrepo-com.svg"
-                  class="me-3 d-flex align-items-center justify-content-center"
+                  class="me-3"
                   style="width: 40px; height: 40px"
                 />
-
                 <div>
                   <span class="d-block text-muted small">Email Me</span>
                   <strong class="text-dark"
@@ -545,43 +581,46 @@
                   >
                 </div>
               </a>
+
               <a
-                href="tel:+1234567890"
+                href="tel:+639102289958"
                 class="list-group-item list-group-item-action border-0 d-flex align-items-center py-3 px-0"
               >
                 <img
                   src="./assets/phone-svgrepo-com.svg"
-                  class="me-3 d-flex align-items-center justify-content-center"
+                  class="me-3"
                   style="width: 40px; height: 40px"
                 />
-
                 <div>
                   <span class="d-block text-muted small">Call or Text</span>
                   <strong class="text-dark">+63 910 228 9958</strong>
                 </div>
               </a>
+
               <div
                 class="list-group-item border-0 d-flex align-items-center py-3 px-0"
               >
                 <img
                   src="./assets/location-pin-svgrepo-com.svg"
-                  class="me-3 d-flex align-items-center justify-content-center"
+                  class="me-3"
                   style="width: 40px; height: 40px"
                 />
-
                 <div>
                   <span class="d-block text-muted small">Location</span>
-                  <strong class="text-dark">tanzang luma 1 77c</strong>
+                  <strong class="text-dark">Tanzang Luma 1 77C</strong>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- Form Column -->
-          <div
-            class="col-lg-7 d-flex justify-content-center align-items-center"
-          >
-            <div class="card border-0 shadow-lg p-4">
-              <form id="contactForm" class="needs-validation" novalidate>
+          <div class="col-lg-7 d-flex">
+            <div class="card w-100 border-0 shadow-lg p-4">
+              <form
+                id="contactForm"
+                class="needs-validation h-100 d-flex flex-column justify-content-between"
+                novalidate
+              >
                 <div class="row g-3">
                   <div class="col-md-6">
                     <input
@@ -600,7 +639,12 @@
                     />
                   </div>
                   <div class="col-12">
-                    <textarea class="form-control" rows="5" required></textarea>
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      required
+                      placeholder="Your Message"
+                    ></textarea>
                   </div>
                   <div class="col-12">
                     <button class="btn btn-primary w-100" type="submit">
@@ -614,6 +658,7 @@
         </div>
       </div>
     </section>
+
     <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left mt-3 pb-3">
