@@ -35,3 +35,39 @@ myCarousel.addEventListener("slide.bs.carousel", function (event) {
     .getElementById("project-repo")
     .setAttribute("href", currentProject.repoUrl);
 });
+
+// dark mode
+// Source - https://stackoverflow.com/a/74989089
+// Posted by Santiago Mirantes
+// Retrieved 2026-07-24, License - CC BY-SA 4.0
+
+const nightButton = document.querySelector("#nightMode");
+const styleSheet = document.querySelector("#light-mode");
+
+// 1. Check localStorage when the page loads
+const savedTheme = localStorage.getItem("theme");
+
+// If the user previously chose a theme, apply it immediately
+if (savedTheme && styleSheet) {
+  styleSheet.setAttribute("href", savedTheme);
+}
+
+// 2. Listen for clicks to toggle themes
+if (nightButton) {
+  nightButton.addEventListener("click", () => {
+    if (styleSheet) {
+      // Get the current stylesheet name
+      let currentTheme = styleSheet.getAttribute("href");
+
+      if (currentTheme === "lightmode.css") {
+        // Switch to dark mode
+        styleSheet.setAttribute("href", "darkmode.css");
+        localStorage.setItem("theme", "darkmode.css");
+      } else {
+        // Switch back to light mode
+        styleSheet.setAttribute("href", "lightmode.css");
+        localStorage.setItem("theme", "lightmode.css");
+      }
+    }
+  });
+}
