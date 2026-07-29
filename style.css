@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   Theme Transition
+================================*/
+
+body {
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+body.theme-fade {
+  opacity: 0.95;
+}
+
+body,
+.card,
+.container,
+.navbar,
+.btn,
+.form-control,
+textarea,
+.list-group-item,
+.progress,
+.badge,
+.bg-body,
+.bg-body-tertiary,
+.text-body,
+.text-body-secondary,
+.custom-shadow {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* ===============================
+   Shadows
+================================*/
+
+[data-bs-theme="light"] .custom-shadow {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-bs-theme="dark"] .custom-shadow {
+  box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.08) !important;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: 0.6s;
+}
+
+.btn:hover::before {
+  left: 150%;
+}

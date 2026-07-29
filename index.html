@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link id="light-mode" rel="stylesheet" href="ligthmode.css" />
+    <link id="light-mode" rel="stylesheet" href="style.css" />
 
     <title>portfolio</title>
   </head>
@@ -56,7 +57,9 @@
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li>
-                  <button id="dark-btn">dark mode</button>
+                  <button id="themeToggle" class="btn btn-primary">
+                    Toggle Theme
+                  </button>
                 </li>
               </ul>
             </div>
@@ -71,7 +74,10 @@
           class="row d-flex align-items-center justify-content-center flex-lg-row-reverse g-5 py-5"
         >
           <!-- Image Column -->
-          <div class="col-10 col-sm-8 col-lg-6 align-items-center">
+          <div
+            class="col-10 col-sm-8 col-lg-6 align-items-center"
+            data-aos="fade-left"
+          >
             <img
               src="./assets/portfolio-svgrepo-com.svg"
               class="d-block mx-lg-auto img-fluid"
@@ -82,7 +88,8 @@
             />
           </div>
           <!-- Content Column -->
-          <div class="col-lg-6">
+
+          <div class="col-lg-6" data-aos="fade-right">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
               Kym Harries Espiritu
             </h1>
@@ -114,9 +121,15 @@
       </div>
     </section>
     <!-- about section -->
-    <section class="about-section" id="about">
+    <section
+      id="about"
+      class="about-section container shadow-lg custom-shadow p-3 mb-5 bg-body-tertiary rounded"
+    >
       <div id="about" class="py-5">
-        <div class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div
+          class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+          data-aos="fade-up"
+        >
           <!-- Section Heading -->
           <div class="text-center mb-5">
             <h2 class="fw-bold text-uppercase">About Me</h2>
@@ -151,7 +164,11 @@
           </div>
         </div>
       </div>
-      <div class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+
+      <div
+        class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+        data-aos="zoom-in"
+      >
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col">
             <div class="container">
@@ -389,7 +406,11 @@
       </div>
     </section>
     <!-- project section -->
-    <section class="project-section" id="project">
+    <section
+      class="project-section container shadow-lg custom-shadow p-3 mb-5 bg-body-tertiary rounded"
+      id="project"
+      data-aos="fade-up"
+    >
       <div class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
         <div
           class="row d-flex align-items-center justify-content-center flex-lg-row-reverse"
@@ -425,7 +446,6 @@
                 ></button>
               </div>
 
-              <!-- FIXED HEIGHT & SCROLL CONTAINER -->
               <div
                 class="carousel-inner overflow-auto rounded"
                 style="height: 500px"
@@ -509,8 +529,6 @@
             </div>
           </div>
 
-          <!-- Content Column -->
-          <!-- Content Column -->
           <div class="col-lg-6">
             <h3
               id="project-title"
@@ -548,12 +566,12 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section
+      data-aos="fade-up"
       id="contact"
-      class="contact-section py-5 bg-light d-flex justify-content-center align-items-center"
+      class="contact-section py-5 bg-body-tertiary d-flex justify-content-center align-items-center container shadow-lg custom-shadow p-3 mb-5 bg-body-tertiary rounded"
     >
-      <div class="container shadow-lg p-4">
+      <div class="container shadow-lg p-4 bg-body rounded">
         <div class="text-center mb-5">
           <h2 class="fw-bold">Get In Touch</h2>
         </div>
@@ -571,7 +589,7 @@
 
               <a
                 href="mailto:codingjourney08@email@example.com"
-                class="list-group-item list-group-item-action border-0 d-flex align-items-center py-3 px-0"
+                class="list-group-item list-group-item-action border-0 d-flex align-items-center py-3 px-0 bg-transparent"
               >
                 <img
                   src="./assets/email-18-svgrepo-com.svg"
@@ -579,16 +597,17 @@
                   style="width: 40px; height: 40px"
                 />
                 <div>
-                  <span class="d-block text-muted small">Email Me</span>
-                  <strong class="text-dark"
-                    >codingjourney08@email@example.com</strong
+                  <!-- CHANGED: Swapped text-white-50 to text-body-secondary so it adapts dynamically -->
+                  <span class="d-block text-body-secondary small"
+                    >Email Me</span
                   >
+                  <strong>codingjourney08@email@example.com</strong>
                 </div>
               </a>
 
               <a
                 href="tel:+639102289958"
-                class="list-group-item list-group-item-action border-0 d-flex align-items-center py-3 px-0"
+                class="list-group-item list-group-item-action border-0 d-flex align-items-center py-3 px-0 bg-transparent"
               >
                 <img
                   src="./assets/phone-svgrepo-com.svg"
@@ -596,13 +615,16 @@
                   style="width: 40px; height: 40px"
                 />
                 <div>
-                  <span class="d-block text-muted small">Call or Text</span>
-                  <strong class="text-dark">+63 910 228 9958</strong>
+                  <!-- CHANGED: Swapped text-white-50 to text-body-secondary so it adapts dynamically -->
+                  <span class="d-block text-body-secondary small"
+                    >Call or Text</span
+                  >
+                  <strong>+63 910 228 9958</strong>
                 </div>
               </a>
 
               <div
-                class="list-group-item border-0 d-flex align-items-center py-3 px-0"
+                class="list-group-item border-0 d-flex align-items-center py-3 px-0 bg-transparent"
               >
                 <img
                   src="./assets/location-pin-svgrepo-com.svg"
@@ -610,16 +632,22 @@
                   style="width: 40px; height: 40px"
                 />
                 <div>
-                  <span class="d-block text-muted small">Location</span>
-                  <strong class="text-dark">Tanzang Luma 1 77C</strong>
+                  <!-- CHANGED: Swapped text-white-50 to text-body-secondary so it adapts dynamically -->
+                  <span class="d-block text-body-secondary small"
+                    >Location</span
+                  >
+                  <strong>Tanzang Luma 1 77C</strong>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Form Column -->
-          <div class="col-lg-7 d-flex">
-            <div class="card w-100 border-0 shadow-lg p-4">
+          <div
+            class="col-lg-7 d-flex container shadow-lg custom-shadow p-3 mb-5 bg-body-tertiary rounded"
+            data-aos="zoom-in"
+          >
+            <div class="card w-100 border-0 shadow-lg p-4 bg-body-tertiary">
               <form
                 id="contactForm"
                 class="needs-validation h-100 d-flex flex-column justify-content-between"
@@ -663,7 +691,7 @@
       </div>
     </section>
 
-    <footer class="bg-dark text-white pt-5 pb-4">
+    <footer class="bg-dark text-white pt-5 pb-4" data-aos="fade-up">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left mt-3 pb-3">
           <!-- Column 1: About/Bio -->
@@ -767,12 +795,15 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
