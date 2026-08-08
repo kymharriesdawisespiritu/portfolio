@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <button id="themeToggle" class="btn btn-primary">
-                    Toggle Theme
+                    dark mode
                   </button>
                 </li>
               </ul>
@@ -597,7 +597,6 @@
                   style="width: 40px; height: 40px"
                 />
                 <div>
-                  <!-- CHANGED: Swapped text-white-50 to text-body-secondary so it adapts dynamically -->
                   <span class="d-block text-body-secondary small"
                     >Email Me</span
                   >
@@ -632,7 +631,6 @@
                   style="width: 40px; height: 40px"
                 />
                 <div>
-                  <!-- CHANGED: Swapped text-white-50 to text-body-secondary so it adapts dynamically -->
                   <span class="d-block text-body-secondary small"
                     >Location</span
                   >
@@ -650,34 +648,42 @@
             <div class="card w-100 border-0 shadow-lg p-4 bg-body-tertiary">
               <form
                 id="contactForm"
+                method="POST"
                 class="needs-validation h-100 d-flex flex-column justify-content-between"
                 novalidate
+                action="index.php"
               >
                 <div class="row g-3">
                   <div class="col-md-6">
                     <input
                       type="text"
+                      name="name"
                       class="form-control"
                       required
                       placeholder="Name"
                     />
                   </div>
+
                   <div class="col-md-6">
                     <input
                       type="email"
+                      name="email"
                       class="form-control"
                       required
                       placeholder="Email"
                     />
                   </div>
+
                   <div class="col-12">
                     <textarea
+                      name="message"
                       class="form-control"
                       rows="5"
                       required
                       placeholder="Your Message"
                     ></textarea>
                   </div>
+
                   <div class="col-12">
                     <button class="btn btn-primary w-100" type="submit">
                       Send
@@ -717,7 +723,7 @@
               >
             </p>
             <p>
-              <a href="#about" class="text-white text-decoration-none"
+              <a href="#skills" class="text-white text-decoration-none"
                 >About Me</a
               >
             </p>
