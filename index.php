@@ -1,3 +1,4 @@
+```php
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -31,16 +32,19 @@ Message:
 $message
 ";
 
-        echo "POST RECEIVED";
-        echo "<br>Name: " . $name;
-        echo "<br>Email: " . $email;
-        echo "<br>Message: " . $message;
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
 
-        echo "<hr>";
-        echo "TO: " . $to;
-        echo "<br>SUBJECT: " . $subject;
-        echo "<br>BODY:";
-        echo nl2br($body);
+        if (mail($to, $subject, $body, $headers)) {
+
+            echo "Message sent successfully!";
+
+        } else {
+
+            echo "Failed to send message.";
+
+        }
     }
 }
 ?>
+```
