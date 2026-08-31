@@ -5,20 +5,20 @@ const projectData = [
   {
     title: "ToDoList",
     desc: "A simple ToDo List application built with HTML, CSS, and JavaScript.",
-    viewUrl: "https://github.io",
-    repoUrl: "https://github.com",
+    viewUrl: "https://kymharriesdawisespiritu.github.io/ToDoList/ ",
+    repoUrl: " https://github.com/kymharriesdawisespiritu/ToDoList.git",
   },
   {
-    title: "Interactive Photo Gallery",
-    desc: "A responsive media gallery built to organize and display imagery.",
-    viewUrl: "https://your-photogallery-link.com",
-    repoUrl: "https://github.com",
+    title: "Foodmeal",
+    desc: "A responsive Foodmeal website ",
+    viewUrl: "https://kymharriesdawisespiritu.github.io/Food-meal/",
+    repoUrl: "https://github.com/kymharriesdawisespiritu/Food-meal.git",
   },
   {
-    title: "Developer Portfolio",
-    desc: "My personal portfolio site built using Bootstrap 5.",
-    viewUrl: "https://your-portfolio-link.com",
-    repoUrl: "https://github.com",
+    title: "resume Portfolio",
+    desc: "My personal resume site.",
+    viewUrl: "https://kymharriesdawisespiritu.github.io/resume/",
+    repoUrl: "https://github.com/kymharriesdawisespiritu/resume.git",
   },
 ];
 
